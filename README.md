@@ -8,6 +8,7 @@ The system is built using Python, Flask, Apache Spark, and machine learning tech
 The two primary techniques used in this project are Collaborative Filtering and Content-Based Filtering.
 
 
+
 **__Overview__**
 
 This Book Recommender System makes use of different recommendation algorithms to suggest books:
@@ -17,6 +18,7 @@ Collaborative Filtering: The system predicts which books a user might like based
 Content-Based Filtering: The system suggests books similar to those that the user has already liked, based on book features such as title, author, and genre.
 
 The backend is powered by Apache Spark for handling large datasets and Flask for the web interface. The recommendation engine is trained using the books' metadata and user ratings.
+
 
 
 **__Technologies used__**
@@ -40,11 +42,12 @@ The backend is powered by Apache Spark for handling large datasets and Flask for
   - Pickle (Saving and Loading Data)
 
 
+
 _Prerequisites:_
   
-  Python 3.x (Check your version by running python --version)
+  - Python 3.x (Check your version by running python --version)
+  - Apache Spark (Spark is required for Collaborative Filtering)
 
-  Apache Spark (Spark is required for Collaborative Filtering)
   
 
 **__Steps to run the project:__**
@@ -72,6 +75,7 @@ _Prerequisites:_
 7. Open your browser and navigate to http://127.0.0.1:5000/ to access the Book Recommender System.
 
 
+
 **__Outcomes__**
 
   Once the application is running:
@@ -85,6 +89,7 @@ _Prerequisites:_
   The Content-Based Filtering technique will recommend books based on the book features (such as genre, description, etc.).
   
   You can interact with the system and receive new suggestions each time.
+
 
 
 __Approaches used:__
@@ -105,7 +110,8 @@ _Steps:_
   - RMSE Calculation: Evaluate the model's performance using Root Mean Squared Error (RMSE).
 
 
-2. Content-Based Filtering
+
+2. Content-Based Filtering:
 
       Content-Based Filtering recommends books based on their features such as title, genre, author, etc. It uses **TfidfVectorizer** and **CountVectorizer** to process the book titles and compute similarities.
 
